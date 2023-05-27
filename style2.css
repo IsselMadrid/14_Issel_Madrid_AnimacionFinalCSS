@@ -1,0 +1,131 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('https://th.bing.com/th/id/OIG.0_KEhzWrQi8ZaN7mbGmi?pid=ImgGn');
+    overflow: hidden;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    filter: brightness(1);
+    animation:luces 4s infinite alternate;
+}
+@keyframes luces{
+  0% {
+    filter: brightness(0.5);
+  }
+  100% {
+    filter: brightness(1.5);
+  }
+}
+.volver img{
+    position: absolute;
+    right: 10px;
+    top:10px;
+    width: 150px;
+    filter: drop-shadow(0px 0px 20px red);
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 300px;
+}
+.card{
+    width: 350px;
+    height: 350px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin: 10px;
+    padding: 10px;
+    background-color: azure;
+    filter: drop-shadow(10px 10px 20px 10px white);
+    animation: res 1s linear infinite;
+    opacity: 0.8;
+}
+@keyframes res {
+    0%{
+        filter:drop-shadow(10px 10px 20px red);
+        transform: translateX(-40px)
+    }
+    100%{
+        filter:drop-shadow(10px 10px 20px blue);
+    }
+}
+.card:last-child {
+    margin-right: 0; 
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container2{
+    position: relative;
+    text-align: center;
+    top:20px;
+}
+.tar{
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+    margin: 10px;
+    filter: drop-shadow(10px 10px 20px 10px white);
+    animation: resp 2s linear infinite;
+}
+@keyframes resp{
+    0%{
+        filter:drop-shadow(10px 10px 20px red);
+    }
+    100%{
+        filter:drop-shadow(10px 10px 20px blue);
+    } 
+}
+.tar:last-child {
+    margin-right: 0; 
+}
+.tar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    top: 150px;
+}
+.car-container{
+    width:100%;
+    height: 100%;
+    text-align: right;
+    position:relative;
+    top:-280px;
+    animation:movimiento 1s linear infinite;
+}
+ @keyframes movimiento {
+    50%{
+        text-align:center;
+        filter: drop-shadow(20px 10px 20px red);
+    } 
+    100%{
+        text-align: left;
+        filter: drop-shadow(40px 30px 50px orange);
+    }   
+ }
+.car{
+    display: inline-block;
+}
+.car img{
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    opacity: 1;
+    filter: drop-shadow(0px 0px 10px blue);
+}
